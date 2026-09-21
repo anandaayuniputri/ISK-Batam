@@ -1,0 +1,4069 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Layanan Konsultasi & Strategi Pemasaran | ISK Batam</title>
+
+  <meta
+    name="description"
+    content="Pendampingan strategi pemasaran untuk membantu bisnis lokal Batam memperkuat branding, memperluas exposure, dan dikenal lebih luas."
+  >
+
+  <meta
+    property="og:title"
+    content="Layanan Konsultasi & Strategi Pemasaran | ISK Batam"
+  >
+
+  <meta
+    property="og:description"
+    content="Pendampingan strategi untuk membantu bisnis lokal Batam tumbuh menjadi brand yang kuat dan dikenal pasar."
+  >
+
+  <meta
+    property="og:image"
+    content="https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=1200&q=80"
+  >
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  >
+
+  <style>
+    :root {
+      --orange: #f97316;
+      --orange-dark: #ea580c;
+      --orange-deep: #c2410c;
+      --orange-soft: #fff4eb;
+      --orange-pale: #fffaf6;
+
+      --black: #171717;
+      --text: #3f3f46;
+      --muted: #71717a;
+
+      --border: #ece8e4;
+      --white: #ffffff;
+      --section: #fffaf7;
+
+      --shadow: 0 24px 60px rgba(80, 42, 17, 0.10);
+
+      --radius: 24px;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: "Plus Jakarta Sans", sans-serif;
+      color: var(--black);
+      background: var(--white);
+      line-height: 1.65;
+      overflow-x: hidden;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    button {
+      font: inherit;
+    }
+
+    .container {
+      width: min(1180px, calc(100% - 40px));
+      margin: 0 auto;
+    }
+
+    /* =========================================================
+       NAVBAR
+    ========================================================= */
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: rgba(255, 255, 255, 0.94);
+      backdrop-filter: blur(18px);
+      border-bottom: 1px solid rgba(236, 232, 228, 0.8);
+    }
+
+    .navbar {
+      min-height: 82px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 30px;
+      position: relative;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      flex-shrink: 0;
+    }
+
+    .brand-mark {
+      width: 58px;
+      height: 58px;
+      object-fit: contain;
+      flex-shrink: 0;
+    }
+
+    .brand-text {
+      display: flex;
+      flex-direction: column;
+      line-height: 1.05;
+    }
+
+    .brand-text strong {
+      font-size: 15px;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+      color: #8f3213;
+    }
+
+    .brand-text span {
+      margin-top: 4px;
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: 0.3px;
+      color: var(--orange);
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 36px;
+      margin-left: auto;
+    }
+
+    .nav-links a {
+      color: #666;
+      font-size: 14px;
+      font-weight: 600;
+      transition: color 0.2s ease;
+    }
+
+    .nav-links a:hover {
+      color: var(--orange);
+    }
+
+    .nav-cta {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 13px 24px;
+      border-radius: 13px;
+      color: white;
+      background: var(--orange);
+      font-size: 14px;
+      font-weight: 800;
+      transition: 0.25s ease;
+      box-shadow: 0 8px 20px rgba(249, 115, 22, 0.18);
+    }
+
+    .nav-cta:hover {
+      background: var(--orange-dark);
+      transform: translateY(-2px);
+    }
+
+    /* =========================================================
+       MOBILE NAV BUTTON
+    ========================================================= */
+
+    .menu-toggle {
+      display: none;
+      width: 44px;
+      height: 44px;
+      border: 0;
+      border-radius: 12px;
+      background: transparent;
+      color: var(--black);
+      cursor: pointer;
+      align-items: center;
+      justify-content: center;
+      transition: 0.25s ease;
+    }
+
+    .menu-toggle:hover {
+      background: #fff3e8;
+      color: var(--orange);
+    }
+
+    .menu-toggle svg {
+      width: 24px;
+      height: 24px;
+    }
+
+    .mobile-nav {
+      display: none;
+    }
+
+    /* =========================================================
+       HERO
+    ========================================================= */
+
+    .hero {
+      position: relative;
+      min-height: 680px;
+      display: flex;
+      align-items: center;
+      overflow: hidden;
+      background:
+        radial-gradient(
+          circle at 84% 45%,
+          rgba(249, 115, 22, 0.08),
+          transparent 32%
+        ),
+        linear-gradient(
+          180deg,
+          #fff 0%,
+          #fff 75%,
+          #fffaf7 100%
+        );
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      width: 500px;
+      height: 500px;
+      right: -230px;
+      top: 80px;
+      border: 1px solid rgba(249, 115, 22, 0.12);
+      border-radius: 50%;
+      pointer-events: none;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1.08fr) minmax(400px, 0.92fr);
+      align-items: center;
+      gap: 70px;
+      position: relative;
+      z-index: 2;
+      padding: 70px 0 90px;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 9px;
+      padding: 8px 15px;
+      border: 1px solid #fed7aa;
+      border-radius: 999px;
+      background: #fff7ef;
+      color: var(--orange-dark);
+      font-size: 12px;
+      font-weight: 800;
+      margin-bottom: 25px;
+    }
+
+    .eyebrow-dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: var(--orange);
+    }
+
+    h1 {
+      max-width: 720px;
+      font-size: clamp(42px, 5.3vw, 74px);
+      line-height: 1.02;
+      letter-spacing: -3.8px;
+      font-weight: 800;
+      margin-bottom: 25px;
+    }
+
+    h1 .accent {
+      color: var(--orange);
+    }
+
+    .hero-description {
+      max-width: 680px;
+      color: #5f6368;
+      font-size: 17px;
+      line-height: 1.8;
+      margin-bottom: 30px;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 0;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      min-height: 58px;
+      padding: 0 25px;
+      border-radius: 14px;
+      font-size: 14px;
+      font-weight: 800;
+      transition: all 0.25s ease;
+      cursor: pointer;
+    }
+
+    .btn-primary {
+      color: white;
+      background: var(--orange);
+      box-shadow: 0 10px 25px rgba(249, 115, 22, 0.25);
+      animation: pulse 2.8s infinite;
+    }
+
+    .btn-primary:hover {
+      background: var(--orange-dark);
+      transform: translateY(-3px);
+      box-shadow: 0 15px 32px rgba(249, 115, 22, 0.3);
+    }
+
+    .btn-secondary {
+      color: #444;
+      background: white;
+      border: 1px solid #e5e5e5;
+    }
+
+    .btn-secondary:hover {
+      border-color: #fdba74;
+      color: var(--orange-dark);
+      transform: translateY(-2px);
+    }
+
+    @keyframes pulse {
+      0%,
+      100% {
+        box-shadow: 0 10px 25px rgba(249, 115, 22, 0.22);
+      }
+
+      50% {
+        box-shadow: 0 10px 30px rgba(249, 115, 22, 0.42);
+      }
+    }
+
+    /* =========================================================
+       ORANGE HERO CARD
+    ========================================================= */
+
+    .hero-visual {
+      width: 100%;
+      max-width: 500px;
+      justify-self: end;
+      position: relative;
+    }
+
+    .orange-card {
+      position: relative;
+      width: 100%;
+      aspect-ratio: 1 / 1.04;
+      min-height: 470px;
+      max-height: 530px;
+      overflow: hidden;
+      border-radius: 30px;
+      background:
+        linear-gradient(
+          145deg,
+          #ff7b19 0%,
+          #f56d0c 53%,
+          #d95508 100%
+        );
+      box-shadow: 0 30px 70px rgba(120, 55, 17, 0.18);
+      isolation: isolate;
+    }
+
+    .orange-card::before {
+      content: "";
+      position: absolute;
+      width: 430px;
+      height: 430px;
+      border: 1px solid rgba(255, 255, 255, 0.17);
+      border-radius: 50%;
+      top: -245px;
+      right: -170px;
+      pointer-events: none;
+    }
+
+    .orange-card::after {
+      content: "";
+      position: absolute;
+      width: 470px;
+      height: 470px;
+      border: 1px solid rgba(255, 255, 255, 0.11);
+      border-radius: 50%;
+      bottom: -320px;
+      left: -220px;
+      pointer-events: none;
+    }
+
+    .card-content {
+      position: relative;
+      z-index: 3;
+      height: 100%;
+      padding: 34px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .card-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .mini-logo {
+      width: 58px;
+      height: 58px;
+      border-radius: 17px;
+      background: rgba(255, 255, 255, 0.95);
+      display: grid;
+      place-items: center;
+      color: var(--orange);
+      box-shadow: 0 10px 25px rgba(90, 35, 7, 0.12);
+      overflow: hidden;
+    }
+
+    .mini-logo img {
+      width: 40px;
+      height: 40px;
+      object-fit: contain;
+    }
+
+    .card-label {
+      display: inline-flex;
+      align-items: center;
+      min-height: 35px;
+      padding: 0 14px;
+      border: 1px solid rgba(255, 255, 255, 0.35);
+      border-radius: 999px;
+      color: white;
+      background: rgba(255, 255, 255, 0.08);
+      font-size: 10px;
+      font-weight: 800;
+      letter-spacing: 0.4px;
+      white-space: nowrap;
+    }
+
+    .card-main {
+      position: absolute;
+      left: 34px;
+      right: 34px;
+      top: 50%;
+      transform: translateY(-43%);
+      max-width: 390px;
+    }
+
+    .card-kicker {
+      color: rgba(255, 255, 255, 0.82);
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.2px;
+      margin-bottom: 12px;
+    }
+
+    .card-title {
+      color: white;
+      font-size: clamp(29px, 3.1vw, 42px);
+      line-height: 1.08;
+      letter-spacing: -1.8px;
+      font-weight: 800;
+      margin-bottom: 18px;
+    }
+
+    .card-description {
+      max-width: 370px;
+      color: rgba(255, 255, 255, 0.86);
+      font-size: 13px;
+      line-height: 1.75;
+      text-align: justify;
+      text-justify: inter-word;
+    }
+
+    .card-bottom {
+      position: absolute;
+      left: 34px;
+      right: 34px;
+      bottom: 34px;
+      z-index: 5;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      color: rgba(255, 255, 255, 0.86);
+      font-size: 11px;
+      font-weight: 600;
+      padding-top: 17px;
+      border-top: 1px solid rgba(255, 255, 255, 0.18);
+    }
+
+    .card-bottom svg {
+      flex-shrink: 0;
+    }
+
+    /* =========================================================
+       GENERAL SECTION
+    ========================================================= */
+
+    section {
+      scroll-margin-top: 82px;
+    }
+
+    .section-heading {
+      width: 100%;
+      max-width: none;
+      margin-bottom: 52px;
+    }
+
+    .section-tag {
+      display: inline-block;
+      color: var(--orange-dark);
+      font-size: 12px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 1.4px;
+      margin-bottom: 14px;
+    }
+
+    h2 {
+      font-size: clamp(31px, 4vw, 48px);
+      line-height: 1.13;
+      letter-spacing: -2px;
+      font-weight: 800;
+      margin-bottom: 17px;
+    }
+
+    .section-heading h2 {
+      width: 100%;
+      max-width: none;
+    }
+
+    .section-heading p {
+      width: 100%;
+      max-width: none;
+      color: var(--muted);
+      font-size: 15px;
+    }
+
+    /* =========================================================
+       PROBLEM
+    ========================================================= */
+
+    .problem {
+      padding: 105px 0;
+      background: var(--section);
+    }
+
+    .problem-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+    }
+
+    .problem-card {
+      padding: 30px;
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      background: white;
+      transition: 0.25s ease;
+    }
+
+    .problem-card:hover {
+      transform: translateY(-5px);
+      border-color: #fed7aa;
+      box-shadow: var(--shadow);
+    }
+
+    .problem-icon {
+      width: 46px;
+      height: 46px;
+      display: grid;
+      place-items: center;
+      border-radius: 13px;
+      background: #fff2e8;
+      color: var(--orange);
+      margin-bottom: 20px;
+    }
+
+    .problem-card h3 {
+      font-size: 17px;
+      line-height: 1.35;
+      margin-bottom: 10px;
+      letter-spacing: -0.5px;
+    }
+
+    .problem-card p {
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.75;
+    }
+
+    /* =========================================================
+       SOLUTION
+    ========================================================= */
+
+    .solution {
+      padding: 110px 0;
+      background: white;
+    }
+
+    .solution-layout {
+      display: grid;
+      grid-template-columns: 0.9fr 1.1fr;
+      gap: 70px;
+      align-items: start;
+    }
+
+    .solution-copy {
+      position: sticky;
+      top: 120px;
+      min-width: 0;
+    }
+
+    .solution-copy .section-tag {
+      font-size: 13px;
+      letter-spacing: 1.7px;
+      margin-bottom: 18px;
+    }
+
+    .solution-copy h2 {
+      width: 100%;
+      max-width: 520px;
+      font-size: clamp(36px, 3.6vw, 48px);
+      line-height: 1.08;
+      letter-spacing: -2.5px;
+      margin-bottom: 38px;
+      text-wrap: balance;
+    }
+
+    /* =========================================================
+       SOLUTION VIDEO
+    ========================================================= */
+
+    .solution-video {
+      position: relative;
+      width: 100%;
+      max-width: 520px;
+      margin: 0;
+      padding: 8px;
+      border-radius: 24px;
+      background:
+        linear-gradient(
+          145deg,
+          #fff7f0 0%,
+          #ffffff 48%,
+          #fff1e7 100%
+        );
+      border: 1px solid #f4dfd0;
+      box-shadow:
+        0 20px 45px rgba(80, 42, 17, 0.09),
+        0 4px 12px rgba(80, 42, 17, 0.04);
+    }
+
+    .solution-video-inner {
+      position: relative;
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      overflow: hidden;
+      border-radius: 18px;
+      background: #17120f;
+    }
+
+    .solution-video iframe {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+      display: block;
+    }
+
+    .benefits {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 15px;
+    }
+
+    .benefit {
+      padding: 25px;
+      border: 1px solid var(--border);
+      border-radius: 19px;
+      background: #fff;
+      transition: 0.25s ease;
+    }
+
+    .benefit:hover {
+      transform: translateY(-4px);
+      border-color: #fed7aa;
+      box-shadow: var(--shadow);
+    }
+
+    .benefit-number {
+      color: var(--orange);
+      font-size: 12px;
+      font-weight: 800;
+      margin-bottom: 18px;
+    }
+
+    .benefit p {
+      color: var(--muted);
+      font-size: 12.5px;
+      line-height: 1.7;
+    }
+
+    /* =========================================================
+       CARA KAMI BEKERJA
+    ========================================================= */
+
+    .workflow {
+      padding: 110px 0;
+      background: #18120e;
+      color: white;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .workflow::before {
+      content: "";
+      position: absolute;
+      width: 500px;
+      height: 500px;
+      border: 1px solid rgba(249, 115, 22, 0.16);
+      border-radius: 50%;
+      right: -220px;
+      top: -220px;
+      pointer-events: none;
+    }
+
+    .workflow::after {
+      content: "";
+      position: absolute;
+      width: 380px;
+      height: 380px;
+      border: 1px solid rgba(249, 115, 22, 0.08);
+      border-radius: 50%;
+      left: -220px;
+      bottom: -220px;
+      pointer-events: none;
+    }
+
+    .workflow .section-tag {
+      color: #fb923c;
+    }
+
+    .workflow-heading {
+      position: relative;
+      z-index: 2;
+      width: 100%;
+      max-width: none;
+      margin-bottom: 50px;
+    }
+
+    .workflow-heading h2 {
+      width: 100%;
+      max-width: 1100px;
+      color: white;
+      margin-bottom: 17px;
+    }
+
+    .workflow-heading p {
+      width: 100%;
+      max-width: none;
+      color: #b7b0ab;
+      font-size: 14px;
+      line-height: 1.8;
+      text-align: left;
+    }
+
+    .workflow-grid {
+      position: relative;
+      z-index: 2;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+      margin-bottom: 20px;
+    }
+
+    .workflow-card {
+      position: relative;
+      padding: 32px;
+      min-height: 250px;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 22px;
+      background: rgba(255, 255, 255, 0.045);
+      transition: 0.25s ease;
+      overflow: hidden;
+
+      /* Membuat isi kartu berada tepat di tengah secara vertikal */
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .workflow-card:hover {
+      transform: translateY(-5px);
+      border-color: rgba(249, 115, 22, 0.4);
+      background: rgba(255, 255, 255, 0.06);
+    }
+
+    .workflow-card h3 {
+      font-size: 19px;
+      line-height: 1.3;
+      margin-bottom: 12px;
+      letter-spacing: -0.5px;
+    }
+
+    .workflow-card p {
+      color: #aaa39d;
+      font-size: 13px;
+      line-height: 1.75;
+    }
+
+    /* =========================================================
+       AI DIAGNOSIS
+    ========================================================= */
+
+    .ai-diagnosis {
+      position: relative;
+      z-index: 2;
+      display: grid;
+      grid-template-columns: 1fr auto;
+      align-items: center;
+      gap: 35px;
+      padding: 30px 34px;
+      margin-top: 18px;
+      border: 1px solid rgba(249, 115, 22, 0.3);
+      border-radius: 22px;
+      background:
+        linear-gradient(
+          135deg,
+          rgba(249, 115, 22, 0.13),
+          rgba(255, 255, 255, 0.045)
+        );
+    }
+
+    .ai-diagnosis-content {
+      display: flex;
+      align-items: flex-start;
+      gap: 17px;
+    }
+
+    .ai-icon {
+      width: 48px;
+      height: 48px;
+      flex-shrink: 0;
+      display: grid;
+      place-items: center;
+      border-radius: 14px;
+      background: rgba(249, 115, 22, 0.15);
+      color: #fb923c;
+    }
+
+    .ai-diagnosis-text h3 {
+      color: white;
+      font-size: 17px;
+      line-height: 1.35;
+      margin-bottom: 7px;
+    }
+
+    .ai-diagnosis-text p {
+      max-width: 670px;
+      color: #aaa39d;
+      font-size: 12.5px;
+      line-height: 1.7;
+    }
+
+    .ai-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 9px;
+      min-height: 48px;
+      padding: 0 20px;
+      border-radius: 12px;
+      background: var(--orange);
+      color: white;
+      font-size: 12px;
+      font-weight: 800;
+      white-space: nowrap;
+      transition: 0.25s ease;
+    }
+
+    .ai-btn:hover {
+      background: var(--orange-dark);
+      transform: translateY(-2px);
+      box-shadow: 0 10px 25px rgba(249, 115, 22, 0.25);
+    }
+
+
+    /* =========================================================
+       MITRA KAMI
+    ========================================================= */
+
+    .partners {
+      position: relative;
+      padding: 55px 0 85px;
+      background:
+        radial-gradient(circle at 15% 30%, rgba(249, 115, 22, 0.06), transparent 28%),
+        linear-gradient(180deg, #fff 0%, #fffaf7 100%);
+      overflow: hidden;
+    }
+
+    .partners::before {
+      content: "";
+      position: absolute;
+      width: 260px;
+      height: 260px;
+      left: -170px;
+      top: 80px;
+      border: 1px solid rgba(249, 115, 22, 0.10);
+      border-radius: 50%;
+      pointer-events: none;
+    }
+
+    .partners-heading {
+      position: relative;
+      z-index: 2;
+      text-align: center;
+      margin-bottom: 34px;
+    }
+
+    .partners-heading h2 {
+      margin-bottom: 10px;
+      font-size: clamp(30px, 3.8vw, 44px);
+      font-weight: 800;
+      letter-spacing: -2px;
+      color: var(--black);
+    }
+
+    .partners-heading h2 .heading-orange {
+      color: var(--orange);
+    }
+
+    .partners-heading p {
+      max-width: 610px;
+      margin: 0 auto;
+      color: var(--muted);
+      font-size: 13.5px;
+      line-height: 1.8;
+    }
+
+    .partners-slider {
+      position: relative;
+      z-index: 2;
+      width: 100%;
+      overflow-x: auto;
+      overflow-y: hidden;
+      scrollbar-width: thin;
+      scrollbar-color: #f5b98f transparent;
+      padding: 10px 4px 20px;
+      cursor: grab;
+      -webkit-overflow-scrolling: touch;
+      scroll-snap-type: x proximity;
+    }
+
+    .partners-slider:active {
+      cursor: grabbing;
+    }
+
+    .partners-track {
+      display: flex;
+      align-items: stretch;
+      gap: 18px;
+      width: max-content;
+    }
+
+    .partner-card {
+      position: relative;
+      width: 190px;
+      height: 165px;
+      flex: 0 0 190px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 22px;
+      border: 1px solid #eee5de;
+      border-radius: 22px;
+      background: rgba(255, 255, 255, 0.94);
+      box-shadow: 0 10px 28px rgba(80, 42, 17, 0.07);
+      transition: transform 0.28s ease, border-color 0.28s ease, box-shadow 0.28s ease;
+      overflow: hidden;
+      scroll-snap-align: start;
+    }
+
+    .partner-card::after {
+      content: "↗";
+      position: absolute;
+      top: 12px;
+      right: 12px;
+      width: 27px;
+      height: 27px;
+      display: grid;
+      place-items: center;
+      border-radius: 50%;
+      color: var(--orange);
+      background: #fff4eb;
+      font-size: 14px;
+      font-weight: 800;
+      opacity: 0;
+      transform: translateY(-4px);
+      transition: 0.25s ease;
+    }
+
+    .partner-card:hover {
+      transform: translateY(-7px);
+      border-color: #fdba74;
+      box-shadow: 0 20px 42px rgba(80, 42, 17, 0.12);
+    }
+
+    .partner-card:hover::after {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .partner-card img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      display: block;
+      transition: transform 0.28s ease;
+    }
+
+    .partner-card:hover img {
+      transform: scale(1.04);
+    }
+
+    .partner-hint {
+      position: relative;
+      z-index: 2;
+      margin-top: 12px;
+      text-align: center;
+      color: #9a918a;
+      font-size: 11px;
+      font-weight: 600;
+    }
+
+    /* =========================================================
+       FINAL CTA
+    ========================================================= */
+
+    .final-cta {
+      padding: 100px 0;
+      background: white;
+    }
+
+    .cta-box {
+      position: relative;
+      overflow: hidden;
+      border-radius: 28px;
+      padding: 70px 50px;
+      text-align: center;
+      background: #fff2e8;
+      border: 1px solid #fed7aa;
+    }
+
+    .cta-box::before,
+    .cta-box::after {
+      content: "";
+      position: absolute;
+      border: 1px solid rgba(249, 115, 22, 0.13);
+      border-radius: 50%;
+      pointer-events: none;
+    }
+
+    .cta-box::before {
+      width: 320px;
+      height: 320px;
+      left: -160px;
+      top: -170px;
+    }
+
+    .cta-box::after {
+      width: 400px;
+      height: 400px;
+      right: -190px;
+      bottom: -230px;
+    }
+
+    .cta-content {
+      position: relative;
+      z-index: 2;
+    }
+
+    .cta-content h2 {
+      max-width: 690px;
+      margin: 0 auto 16px;
+    }
+
+    .cta-content p {
+      max-width: 600px;
+      margin: 0 auto 28px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .urgency {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      color: #9a3412;
+      font-size: 11px;
+      font-weight: 800;
+      margin-bottom: 22px;
+      padding: 8px 13px;
+      border-radius: 999px;
+      background: rgba(249, 115, 22, 0.08);
+    }
+
+    .urgency-dot {
+      width: 7px;
+      height: 7px;
+      background: var(--orange);
+      border-radius: 50%;
+      animation: blink 1.5s infinite;
+    }
+
+    @keyframes blink {
+      0%,
+      100% {
+        opacity: 1;
+      }
+
+      50% {
+        opacity: 0.35;
+      }
+    }
+
+    /* =========================================================
+       FAQ
+    ========================================================= */
+
+    .faq {
+      padding: 105px 0;
+      background: var(--section);
+    }
+
+    .faq-wrap {
+      max-width: 820px;
+      margin: 0 auto;
+    }
+
+    .faq-heading {
+      text-align: center;
+      margin-bottom: 45px;
+    }
+
+    .faq-heading p {
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .faq-item {
+      border-bottom: 1px solid #e7e1dc;
+    }
+
+    .faq-question {
+      width: 100%;
+      padding: 23px 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      border: 0;
+      background: transparent;
+      text-align: left;
+      cursor: pointer;
+      color: #27272a;
+      font-size: 14px;
+      font-weight: 700;
+    }
+
+    .faq-icon {
+      width: 28px;
+      height: 28px;
+      display: grid;
+      place-items: center;
+      border-radius: 50%;
+      background: white;
+      color: var(--orange);
+      border: 1px solid #eee;
+      flex-shrink: 0;
+      transition: transform 0.25s ease;
+    }
+
+    .faq-answer {
+      display: grid;
+      grid-template-rows: 0fr;
+      transition: grid-template-rows 0.3s ease;
+    }
+
+    .faq-answer > div {
+      overflow: hidden;
+    }
+
+    .faq-answer p {
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.8;
+      padding-bottom: 0;
+    }
+
+    .faq-item.active .faq-answer {
+      grid-template-rows: 1fr;
+    }
+
+    .faq-item.active .faq-answer p {
+      padding-bottom: 22px;
+    }
+
+    .faq-item.active .faq-icon {
+      transform: rotate(45deg);
+    }
+
+    .faq-contact {
+      margin-top: 55px;
+      padding: 38px;
+      border: 1px solid #eee5de;
+      border-radius: 22px;
+      background: white;
+      box-shadow: 0 14px 35px rgba(80, 42, 17, 0.06);
+    }
+
+    .faq-contact-heading {
+      text-align: center;
+      margin-bottom: 28px;
+    }
+
+    .faq-contact-heading h3 {
+      font-size: 21px;
+      line-height: 1.35;
+      margin-bottom: 8px;
+      letter-spacing: -0.6px;
+    }
+
+    .faq-contact-heading p {
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.75;
+    }
+
+    .faq-form {
+      display: grid;
+      gap: 16px;
+    }
+
+    .faq-form-group {
+      display: grid;
+      gap: 8px;
+    }
+
+    .faq-form-group label {
+      color: #27272a;
+      font-size: 12px;
+      font-weight: 700;
+    }
+
+    .faq-form-group input,
+    .faq-form-group textarea {
+      width: 100%;
+      border: 1px solid #e7e1dc;
+      border-radius: 12px;
+      padding: 13px 14px;
+      background: #fffaf7;
+      color: var(--black);
+      font: inherit;
+      font-size: 13px;
+      outline: none;
+      transition: border-color 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .faq-form-group textarea {
+      min-height: 130px;
+      resize: vertical;
+    }
+
+    .faq-form-group input:focus,
+    .faq-form-group textarea:focus {
+      border-color: #fdba74;
+      box-shadow: 0 0 0 3px rgba(249, 115, 22, 0.08);
+      background: white;
+    }
+
+    .faq-form .btn {
+      width: 100%;
+      border: 0;
+      margin-top: 4px;
+    }
+
+
+    /* =========================================================
+       TEMUKAN ISK BATAM
+    ========================================================= */
+
+    .find-isk {
+      padding: 95px 0 105px;
+      background: white;
+    }
+
+    .find-isk-wrap {
+      max-width: 820px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .find-isk-heading {
+      margin-bottom: 32px;
+    }
+
+    .find-isk-heading h2 {
+      margin-bottom: 12px;
+    }
+
+    .find-isk-heading p {
+      color: var(--muted);
+      font-size: 14px;
+      line-height: 1.8;
+    }
+
+    .social-links {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-bottom: 42px;
+    }
+
+    .social-link {
+      width: 52px;
+      height: 52px;
+      display: grid;
+      place-items: center;
+      border: 1px solid #e9e2dc;
+      border-radius: 15px;
+      background: #fffaf7;
+      color: #444;
+      transition: 0.25s ease;
+    }
+
+    .social-link:hover {
+      color: var(--orange);
+      border-color: #fdba74;
+      background: #fff4eb;
+      transform: translateY(-4px);
+      box-shadow: 0 12px 25px rgba(80, 42, 17, 0.08);
+    }
+
+    .social-link svg {
+      width: 22px;
+      height: 22px;
+    }
+
+    .map-link {
+      position: relative;
+      display: block;
+      overflow: hidden;
+      min-height: 235px;
+      border: 1px solid #eee5de;
+      border-radius: 22px;
+      background: #f4eee9;
+      box-shadow: 0 14px 35px rgba(80, 42, 17, 0.06);
+      transition: 0.25s ease;
+    }
+
+    .map-link iframe {
+      width: 100%;
+      height: 360px;
+      display: block;
+      border: 0;
+    }
+
+    .map-link:hover {
+      border-color: #fdba74;
+      transform: translateY(-3px);
+      box-shadow: 0 20px 42px rgba(80, 42, 17, 0.10);
+    }
+
+    .map-overlay {
+      position: absolute;
+      left: 50%;
+      bottom: 18px;
+      transform: translateX(-50%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      gap: 7px;
+      min-width: 210px;
+      padding: 13px 18px;
+      border: 1px solid rgba(255,255,255,0.75);
+      border-radius: 15px;
+      background: rgba(255,255,255,0.92);
+      backdrop-filter: blur(8px);
+      box-shadow: 0 10px 25px rgba(80, 42, 17, 0.12);
+      transition: 0.25s ease;
+    }
+
+    .map-overlay:hover {
+      transform: translateX(-50%) translateY(-2px);
+    }
+
+    .map-icon {
+      width: 52px;
+      height: 52px;
+      display: grid;
+      place-items: center;
+      border-radius: 50%;
+      background: var(--orange);
+      color: white;
+      box-shadow: 0 10px 25px rgba(249, 115, 22, 0.25);
+    }
+
+    .map-overlay strong {
+      color: var(--black);
+      font-size: 15px;
+    }
+
+    .map-overlay span {
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    /* =========================================================
+       FOOTER
+    ========================================================= */
+
+    footer {
+      padding: 55px 0 35px;
+      background: #17120f;
+      color: white;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      align-items: end;
+      gap: 40px;
+      padding-bottom: 32px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .footer-brand .brand-text strong {
+      color: white;
+    }
+
+    .footer-brand p {
+      display: none;
+    }
+
+    .footer-col h3 {
+      font-size: 12px;
+      margin-bottom: 17px;
+      color: white;
+    }
+
+    .footer-col a {
+      display: block;
+      color: #99918c;
+      font-size: 12px;
+      margin-bottom: 10px;
+      transition: color 0.2s ease;
+    }
+
+    .footer-col a:hover {
+      color: #fb923c;
+    }
+
+    .footer-contact {
+      display: inline-flex !important;
+      align-items: center;
+      gap: 8px;
+      color: #fb923c !important;
+      font-weight: 700;
+    }
+
+    .footer-socials {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      gap: 10px;
+    }
+
+    .footer-social-link {
+      width: 40px;
+      height: 40px;
+      display: grid;
+      place-items: center;
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      border-radius: 11px;
+      color: #d7d0cb;
+      background: rgba(255, 255, 255, 0.035);
+      transition: 0.25s ease;
+    }
+
+    .footer-social-link:hover {
+      color: #fb923c;
+      border-color: rgba(249, 115, 22, 0.45);
+      background: rgba(249, 115, 22, 0.08);
+      transform: translateY(-3px);
+    }
+
+    .footer-social-link svg {
+      width: 18px;
+      height: 18px;
+    }
+
+    .footer-bottom {
+      padding-top: 25px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      color: #77716d;
+      font-size: 10px;
+    }
+
+    .trust {
+      display: flex;
+      align-items: center;
+      gap: 7px;
+    }
+
+    .trust svg {
+      color: #fb923c;
+    }
+
+    /* =========================================================
+       MOBILE CTA
+    ========================================================= */
+
+    .mobile-cta {
+      display: none;
+    }
+
+    /* =========================================================
+       REVEAL
+    ========================================================= */
+
+    .reveal {
+      opacity: 0;
+      transform: translateY(20px);
+      transition:
+        opacity 0.65s ease,
+        transform 0.65s ease;
+    }
+
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* =========================================================
+       RESPONSIVE - TABLET
+    ========================================================= */
+
+    @media (max-width: 980px) {
+
+      .nav-links {
+        gap: 20px;
+      }
+
+      .hero-grid {
+        grid-template-columns: 1fr;
+        gap: 55px;
+      }
+
+      .hero-visual {
+        justify-self: start;
+        max-width: 580px;
+      }
+
+      .problem-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .solution-layout {
+        grid-template-columns: 1fr;
+        gap: 45px;
+      }
+
+      .solution-copy {
+        position: static;
+      }
+
+      .solution-copy h2 {
+        max-width: 700px;
+      }
+
+      .solution-video {
+        max-width: 100%;
+      }
+
+      .workflow-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .ai-diagnosis {
+        grid-template-columns: 1fr;
+        gap: 22px;
+      }
+
+      .ai-btn {
+        justify-self: start;
+      }
+
+      .offer-card {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    /* =========================================================
+       RESPONSIVE - MOBILE
+    ========================================================= */
+
+    @media (max-width: 720px) {
+
+      body {
+        padding-bottom: 72px;
+      }
+
+      .container {
+        width: min(100% - 28px, 1180px);
+      }
+
+      header {
+        position: sticky;
+        top: 0;
+      }
+
+      .navbar {
+        min-height: 70px;
+      }
+
+      /* MOBILE NAVBAR */
+
+      .nav-links,
+      .nav-cta {
+        display: none;
+      }
+
+      .menu-toggle {
+        display: inline-flex;
+      }
+
+      .mobile-nav {
+        position: absolute;
+        left: 14px;
+        right: 14px;
+        top: calc(100% + 8px);
+        display: flex;
+        flex-direction: column;
+        padding: 8px;
+        border: 1px solid #eee7e2;
+        border-radius: 18px;
+        background: rgba(255, 255, 255, 0.98);
+        backdrop-filter: blur(18px);
+        box-shadow:
+          0 18px 45px rgba(80, 42, 17, 0.12),
+          0 4px 12px rgba(80, 42, 17, 0.05);
+
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(-8px);
+        pointer-events: none;
+
+        transition:
+          opacity 0.25s ease,
+          transform 0.25s ease,
+          visibility 0.25s ease;
+      }
+
+      .mobile-nav.active {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+        pointer-events: auto;
+      }
+
+      .mobile-nav a {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        min-height: 48px;
+        padding: 0 15px;
+        border-radius: 12px;
+        color: #555;
+        font-size: 13px;
+        font-weight: 700;
+        transition: 0.2s ease;
+      }
+
+      .mobile-nav a:hover,
+      .mobile-nav a:active {
+        color: var(--orange);
+        background: #fff5ed;
+      }
+
+      .menu-toggle.active {
+        color: var(--orange);
+        background: #fff3e8;
+      }
+
+      .menu-toggle.active .menu-icon {
+        display: none;
+      }
+
+      .menu-toggle .close-icon {
+        display: none;
+      }
+
+      .menu-toggle.active .close-icon {
+        display: block;
+      }
+
+      .brand-mark {
+        width: 48px;
+        height: 48px;
+      }
+
+      /* HERO */
+
+      .hero {
+        min-height: auto;
+      }
+
+      .hero-grid {
+        padding: 52px 0 65px;
+        gap: 45px;
+      }
+
+      h1 {
+        font-size: clamp(40px, 12vw, 57px);
+        letter-spacing: -2.8px;
+      }
+
+      .hero-description {
+        font-size: 14px;
+        line-height: 1.75;
+      }
+
+      .hero-actions {
+        flex-direction: column;
+        align-items: stretch;
+      }
+
+      .btn {
+        width: 100%;
+      }
+
+      .orange-card {
+        min-height: 430px;
+        aspect-ratio: auto;
+        height: 430px;
+        border-radius: 24px;
+      }
+
+      .card-content {
+        padding: 25px;
+      }
+
+      .mini-logo {
+        width: 50px;
+        height: 50px;
+      }
+
+      .mini-logo img {
+        width: 34px;
+        height: 34px;
+      }
+
+      .card-label {
+        font-size: 9px;
+        padding: 0 10px;
+      }
+
+      .card-main {
+        left: 25px;
+        right: 25px;
+        top: 50%;
+        transform: translateY(-45%);
+      }
+
+      .card-kicker {
+        font-size: 11px;
+        margin-bottom: 10px;
+      }
+
+      .card-title {
+        font-size: 32px;
+        margin-bottom: 15px;
+      }
+
+      .card-description {
+        font-size: 12px;
+        line-height: 1.7;
+      }
+
+      .card-bottom {
+        left: 25px;
+        right: 25px;
+        bottom: 25px;
+        font-size: 10px;
+      }
+
+      /* SECTIONS */
+
+      .problem,
+      .solution,
+      .workflow,
+      .offer,
+      .final-cta,
+      .faq {
+        padding: 75px 0;
+      }
+
+      .section-heading {
+        width: 100%;
+        max-width: none;
+        margin-bottom: 42px;
+      }
+
+      .section-heading h2 {
+        width: 100%;
+        max-width: none;
+        font-size: clamp(34px, 9.5vw, 47px);
+        line-height: 1.08;
+        letter-spacing: -2px;
+      }
+
+      .section-heading p {
+        width: 100%;
+        max-width: none;
+        font-size: 14px;
+        line-height: 1.75;
+      }
+
+      .problem-grid {
+        grid-template-columns: 1fr;
+      }
+
+      /* SOLUTION */
+
+      .solution-copy .section-tag {
+        font-size: 12px;
+        margin-bottom: 14px;
+      }
+
+      .solution-copy h2 {
+        max-width: 100%;
+        font-size: clamp(32px, 8.8vw, 43px);
+        line-height: 1.08;
+        letter-spacing: -2px;
+        margin-bottom: 30px;
+      }
+
+      .solution-video {
+        padding: 6px;
+        border-radius: 20px;
+        margin-bottom: 0;
+      }
+
+      .solution-video-inner {
+        border-radius: 15px;
+      }
+
+      .benefits {
+        grid-template-columns: 1fr;
+      }
+
+      /* WORKFLOW */
+
+      .workflow-heading {
+        width: 100%;
+        max-width: none;
+        margin-bottom: 40px;
+      }
+
+      .workflow-heading h2 {
+        width: 100%;
+        max-width: 100%;
+        font-size: clamp(34px, 9.5vw, 47px);
+        line-height: 1.08;
+      }
+
+      .workflow-heading p {
+        width: 100%;
+        max-width: none;
+        text-align: left;
+        line-height: 1.8;
+      }
+
+      .workflow-grid {
+        grid-template-columns: 1fr;
+        gap: 14px;
+      }
+
+      .workflow-card {
+        min-height: 210px;
+        padding: 27px;
+        justify-content: center;
+      }
+
+      .workflow-card h3 {
+        font-size: 18px;
+      }
+
+      .workflow-card p {
+        font-size: 12.5px;
+      }
+
+      /* AI DIAGNOSIS */
+
+      .ai-diagnosis {
+        grid-template-columns: 1fr;
+        gap: 22px;
+        padding: 25px;
+        border-radius: 20px;
+      }
+
+      .ai-diagnosis-content {
+        gap: 13px;
+      }
+
+      .ai-icon {
+        width: 42px;
+        height: 42px;
+        border-radius: 12px;
+      }
+
+      .ai-diagnosis-text h3 {
+        font-size: 15px;
+      }
+
+      .ai-diagnosis-text p {
+        font-size: 11.5px;
+      }
+
+      .ai-btn {
+        width: 100%;
+      }
+
+      /* OFFER */
+
+      .offer-card {
+        grid-template-columns: 1fr;
+      }
+
+      .offer-main,
+      .offer-detail {
+        padding: 30px;
+      }
+
+      /* MITRA KAMI */
+
+      .partners {
+        padding: 45px 0 70px;
+      }
+
+      .partners-heading {
+        margin-bottom: 25px;
+      }
+
+      .partners-heading h2 {
+        font-size: clamp(30px, 9vw, 40px);
+        letter-spacing: -1.7px;
+      }
+
+      .partners-heading p {
+        max-width: 520px;
+        font-size: 12px;
+        line-height: 1.75;
+      }
+
+      .partners-slider {
+        padding: 8px 2px 17px;
+      }
+
+      .partner-card {
+        width: 155px;
+        height: 132px;
+        flex-basis: 155px;
+        padding: 16px;
+        border-radius: 18px;
+      }
+
+      .partner-card::after {
+        width: 24px;
+        height: 24px;
+        top: 9px;
+        right: 9px;
+        font-size: 12px;
+      }
+
+      .partners-track {
+        gap: 13px;
+      }
+
+      /* CTA */
+
+      .cta-box {
+        padding: 55px 23px;
+        border-radius: 22px;
+      }
+
+      /* FAQ FORM */
+
+      .faq-contact {
+        margin-top: 42px;
+        padding: 27px 20px;
+        border-radius: 18px;
+      }
+
+      .faq-contact-heading {
+        margin-bottom: 23px;
+      }
+
+      .faq-contact-heading h3 {
+        font-size: 18px;
+      }
+
+      .map-link iframe {
+        height: 300px;
+      }
+
+      .map-overlay {
+        min-width: 190px;
+        bottom: 12px;
+        padding: 10px 14px;
+      }
+
+      .faq-contact-heading p {
+        font-size: 12px;
+      }
+
+
+      /* TEMUKAN ISK BATAM */
+
+      .find-isk {
+        padding: 75px 0;
+      }
+
+      .find-isk-heading h2 {
+        font-size: clamp(32px, 8.8vw, 43px);
+        line-height: 1.08;
+        letter-spacing: -2px;
+      }
+
+      .social-links {
+        gap: 10px;
+        margin-bottom: 32px;
+      }
+
+      .social-link {
+        width: 48px;
+        height: 48px;
+        border-radius: 14px;
+      }
+
+      .map-link {
+        min-height: 205px;
+        border-radius: 20px;
+      }
+
+      /* FOOTER */
+
+      .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 25px;
+        align-items: start;
+      }
+
+      .footer-socials {
+        justify-content: flex-start;
+        flex-wrap: wrap;
+      }
+
+      .footer-bottom {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+}
+
+    /* =========================================================
+       SMALL MOBILE
+    ========================================================= */
+
+    @media (max-width: 390px) {
+
+      .brand-text strong {
+        font-size: 13px;
+      }
+
+      .brand-text span {
+        font-size: 9px;
+      }
+
+      .brand-mark {
+        width: 42px;
+        height: 42px;
+      }
+
+      .orange-card {
+        height: 400px;
+      }
+
+      .card-main {
+        top: 49%;
+      }
+
+      .card-title {
+        font-size: 29px;
+      }
+
+      .card-description {
+        font-size: 11.5px;
+      }
+
+      .card-bottom {
+        display: none;
+      }
+
+      .section-heading h2 {
+        font-size: 34px;
+      }
+
+      .solution-copy h2 {
+        font-size: 32px;
+      }
+
+      .workflow-heading h2 {
+        font-size: 34px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- =========================================================
+       NAVBAR
+  ========================================================= -->
+
+  <header>
+
+    <nav
+      class="navbar container"
+      aria-label="Navigasi utama"
+    >
+
+      <a
+        href="#beranda"
+        class="brand"
+        aria-label="Inovasi Strategi Konsultan"
+      >
+
+        <img
+          class="brand-mark"
+          src="assets/logoisk.png"
+          alt="Logo Inovasi Strategi Konsultan"
+        >
+
+      </a>
+
+      <!-- DESKTOP NAVIGATION -->
+
+      <div class="nav-links">
+
+        <a href="#masalah">
+          Masalah
+        </a>
+
+        <a href="#solusi">
+          Layanan
+        </a>
+
+        <a href="#cara-kerja">
+          Cara Kami Bekerja
+        </a>
+
+        <a
+          href="#konsultasi"
+        >
+          Konsultasi
+        </a>
+
+        <a href="#mitra">
+          Mitra
+        </a>
+
+        <a href="#faq">
+          FAQ
+        </a>
+
+        <a href="#temukan-isk">
+          Kontak
+        </a>
+
+      </div>
+
+      <!-- MOBILE MENU BUTTON -->
+
+      <button
+        class="menu-toggle"
+        id="menuToggle"
+        type="button"
+        aria-label="Buka menu navigasi"
+        aria-expanded="false"
+        aria-controls="mobileNav"
+      >
+
+        <svg
+          class="menu-icon"
+          viewBox="0 0 24 24"
+          fill="none"
+          aria-hidden="true"
+        >
+
+          <path
+            d="M4 7H20M4 12H20M4 17H20"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+          />
+
+        </svg>
+
+        <svg
+          class="close-icon"
+          viewBox="0 0 24 24"
+          fill="none"
+          aria-hidden="true"
+        >
+
+          <path
+            d="M6 6L18 18M18 6L6 18"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+          />
+
+        </svg>
+
+      </button>
+
+      <!-- MOBILE NAVIGATION -->
+
+      <div
+        class="mobile-nav"
+        id="mobileNav"
+      >
+
+        <a href="#masalah">
+          Masalah
+        </a>
+
+        <a href="#solusi">
+          Layanan
+        </a>
+
+        <a href="#cara-kerja">
+          Cara Kami Bekerja
+        </a>
+
+        <a href="#konsultasi">
+          Konsultasi
+        </a>
+
+        <a href="#mitra">
+          Mitra
+        </a>
+
+        <a href="#faq">
+          FAQ
+        </a>
+
+        <a href="#temukan-isk">
+          Kontak
+        </a>
+
+      </div>
+
+    </nav>
+
+  </header>
+
+  <main id="beranda">
+
+    <!-- =======================================================
+         HERO
+    ======================================================= -->
+
+    <section
+      class="hero"
+      aria-labelledby="hero-title"
+    >
+
+      <div class="container hero-grid">
+
+        <div class="hero-copy reveal">
+
+          <div class="eyebrow">
+
+            <span class="eyebrow-dot"></span>
+
+            Konsultasi &amp; Strategi Pemasaran
+
+          </div>
+
+          <h1 id="hero-title">
+
+            Bawa Bisnis Lokal Anda Jadi
+
+            <span class="accent">
+              Brand yang Dikenal.
+            </span>
+
+          </h1>
+
+          <p class="hero-description">
+
+            Pendampingan strategi untuk membantu bisnis lokal Batam memperkuat branding,
+            memperluas exposure, dan menjangkau pasar yang lebih luas.
+
+          </p>
+
+          <div class="hero-actions">
+
+            <a
+              href="https://wa.me/628558885800"
+              target="_blank"
+              rel="noopener"
+              class="btn btn-primary"
+            >
+
+              Hubungi Kami
+
+              <svg
+                width="17"
+                height="17"
+                viewBox="0 0 24 24"
+                fill="none"
+                aria-hidden="true"
+              >
+
+                <path
+                  d="M5 12H19M13 6L19 12L13 18"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+
+              </svg>
+
+            </a>
+
+            <a
+              href="#solusi"
+              class="btn btn-secondary"
+            >
+              Lihat Layanan
+            </a>
+
+          </div>
+
+        </div>
+
+        <!-- ORANGE HERO CARD -->
+
+        <div class="hero-visual reveal">
+
+          <div class="orange-card">
+
+            <div class="card-content">
+
+              <div class="card-top">
+
+                <div class="mini-logo">
+
+                  <img
+                    src="assets/logoisk.png"
+                    alt="Logo Inovasi Strategi Konsultan"
+                  >
+
+                </div>
+
+                <span class="card-label">
+                  BATAM LOCAL BUSINESS
+                </span>
+
+              </div>
+
+              <div class="card-main">
+
+                <div class="card-kicker">
+                  Selamat datang di
+                </div>
+
+                <div class="card-title">
+                  Inovasi Strategi Konsultan
+                </div>
+
+                <p class="card-description">
+
+                  PT. Inovasi Strategi Konsultan (ISK) hadir sebagai lembaga konsultasi bisnis
+                  yang mendampingi produk lokal tumbuh menjadi brand yang kuat, bernilai,
+                  dan dicintai pasar.
+
+                </p>
+
+              </div>
+
+              <div class="card-bottom">
+
+                <svg
+                  width="17"
+                  height="17"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  aria-hidden="true"
+                >
+
+                  <path
+                    d="M4 19V5M4 19H20M7 15L11 11L14 14L20 8"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+
+                </svg>
+
+                Pendekatan strategi yang disesuaikan dengan kebutuhan bisnis
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- =======================================================
+         PROBLEM
+    ======================================================= -->
+
+    <section
+      class="problem"
+      id="masalah"
+      aria-labelledby="problem-title"
+    >
+
+      <div class="container">
+
+        <div class="section-heading reveal">
+
+          <span class="section-tag">
+            Masalah yang sering terjadi
+          </span>
+
+          <h2 id="problem-title">
+            Bisnis anda bagus, tapi belum cukup dikenal.
+          </h2>
+
+          <p>
+            Banyak bisnis lokal punya produk yang layak dibanggakan, tetapi belum memiliki
+            strategi untuk membuatnya terlihat dan mudah ditemukan oleh pasar.
+          </p>
+
+        </div>
+
+        <div class="problem-grid">
+
+          <article class="problem-card reveal">
+
+            <div class="problem-icon">
+
+              <svg
+                width="22"
+                height="22"
+                viewBox="0 0 24 24"
+                fill="none"
+                aria-hidden="true"
+              >
+
+                <path
+                  d="M4 5H20V19H4V5Z"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                />
+
+                <path
+                  d="M8 9H16M8 13H13"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                  stroke-linecap="round"
+                />
+
+              </svg>
+
+            </div>
+
+            <h3>
+              Profil bisnis belum terlihat profesional
+            </h3>
+
+            <p>
+              Informasi bisnis masih tersebar sehingga calon pelanggan sulit memahami
+              siapa Anda dan apa yang ditawarkan.
+            </p>
+
+          </article>
+
+          <article class="problem-card reveal">
+
+            <div class="problem-icon">
+
+              <svg
+                width="22"
+                height="22"
+                viewBox="0 0 24 24"
+                fill="none"
+                aria-hidden="true"
+              >
+
+                <circle
+                  cx="11"
+                  cy="11"
+                  r="6.5"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                />
+
+                <path
+                  d="M16 16L21 21"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                  stroke-linecap="round"
+                />
+
+              </svg>
+
+            </div>
+
+            <h3>
+              Sulit ditemukan oleh calon pelanggan
+            </h3>
+
+            <p>
+              Produk yang bagus bisa kehilangan peluang ketika masyarakat belum tahu
+              harus mencari atau menemukannya di mana.
+            </p>
+
+          </article>
+
+          <article class="problem-card reveal">
+
+            <div class="problem-icon">
+
+              <svg
+                width="22"
+                height="22"
+                viewBox="0 0 24 24"
+                fill="none"
+                aria-hidden="true"
+              >
+
+                <path
+                  d="M4 18L9 12L13 15L20 7"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+
+                <path
+                  d="M16 7H20V11"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+
+              </svg>
+
+            </div>
+
+            <h3>
+              Exposure dan awareness masih terbatas
+            </h3>
+
+            <p>
+              Bisnis membutuhkan cara yang lebih tepat untuk memperkenalkan produk
+              dan membangun ingatan terhadap brand.
+            </p>
+
+          </article>
+
+          <article class="problem-card reveal">
+
+            <div class="problem-icon">
+
+              <svg
+                width="22"
+                height="22"
+                viewBox="0 0 24 24"
+                fill="none"
+                aria-hidden="true"
+              >
+
+                <path
+                  d="M12 3V21M3 12H21"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                  stroke-linecap="round"
+                />
+
+                <circle
+                  cx="12"
+                  cy="12"
+                  r="8.5"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                />
+
+              </svg>
+
+            </div>
+
+            <h3>
+              Brand belum punya positioning yang kuat
+            </h3>
+
+            <p>
+              Tanpa arah yang jelas, bisnis lebih sulit membedakan dirinya
+              dari banyak pilihan yang ada di pasar.
+            </p>
+
+          </article>
+
+          <article class="problem-card reveal">
+
+            <div class="problem-icon">
+
+              <svg
+                width="22"
+                height="22"
+                viewBox="0 0 24 24"
+                fill="none"
+                aria-hidden="true"
+              >
+
+                <path
+                  d="M5 7H19M5 12H19M5 17H14"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                  stroke-linecap="round"
+                />
+
+              </svg>
+
+            </div>
+
+            <h3>
+              Media promosi belum dimanfaatkan optimal
+            </h3>
+
+            <p>
+              Bisnis sudah memiliki produk, tetapi belum memiliki media
+              yang mampu menampilkannya dengan menarik dan meyakinkan.
+            </p>
+
+          </article>
+
+          <article class="problem-card reveal">
+
+            <div class="problem-icon">
+
+              <svg
+                width="22"
+                height="22"
+                viewBox="0 0 24 24"
+                fill="none"
+                aria-hidden="true"
+              >
+
+                <path
+                  d="M4 17L10 11L14 15L20 8"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+
+                <path
+                  d="M16 8H20V12"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+
+              </svg>
+
+            </div>
+
+            <h3>
+              Peluang berkembang belum maksimal
+            </h3>
+
+            <p>
+              Potensi bisnis bisa lebih besar ketika branding, exposure,
+              dan strategi pemasaran berjalan dalam arah yang sama.
+            </p>
+
+          </article>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- =======================================================
+         LAYANAN
+    ======================================================= -->
+
+    <section
+      class="solution"
+      id="solusi"
+      aria-labelledby="solution-title"
+    >
+
+      <div class="container solution-layout">
+
+        <div class="solution-copy reveal">
+
+          <span class="section-tag">
+            Layanan
+          </span>
+
+          <h2 id="solution-title">
+            Promosi bukan sekadar tampil.
+            Kami bantu menentukan arah brand.
+          </h2>
+
+          <!-- VIDEO YOUTUBE -->
+
+          <div class="solution-video">
+
+            <div class="solution-video-inner">
+
+              <iframe
+                src="https://www.youtube-nocookie.com/embed/7d-XQ6vmISQ?rel=0&playsinline=1"
+                title="Video Inovasi Strategi Konsultan"
+                loading="lazy"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="benefits">
+
+          <article class="benefit reveal">
+
+            <div class="benefit-number">
+              01 — DIGITALISASI
+            </div>
+
+            <p>
+              Pembuatan website profesional, manajemen marketplace,
+              optimasi Google Business Profile, serta integrasi tools bisnis modern.
+            </p>
+
+          </article>
+
+          <article class="benefit reveal">
+
+            <div class="benefit-number">
+              02 — UMKM NAIK KELAS
+            </div>
+
+            <p>
+              Konsultasi strategi bisnis, pembukuan sederhana terarah,
+              pengurusan legalitas dan sertifikasi, serta bimbingan akses permodalan usaha.
+            </p>
+
+          </article>
+
+          <article class="benefit reveal">
+
+            <div class="benefit-number">
+              03 — BRANDING
+            </div>
+
+            <p>
+              Desain logo, pembentukan identitas visual, storytelling brand,
+              desain kemasan, dan fotografi produk berkualitas.
+            </p>
+
+          </article>
+
+          <article class="benefit reveal">
+
+            <div class="benefit-number">
+              04 — PEMASARAN
+            </div>
+
+            <p>
+              Strategi media sosial terarah, iklan digital (ads), optimasi SEO,
+              content marketing kreatif, dan eksekusi event pemasaran.
+            </p>
+
+          </article>
+
+          <article class="benefit reveal">
+
+            <div class="benefit-number">
+              05 — KOMUNITAS &amp; NETWORKING
+            </div>
+
+            <p>
+              Wadah forum belajar interaktif, fasilitasi business matching,
+              dan program kolaborasi strategis antar pelaku UMKM.
+            </p>
+
+          </article>
+
+          <article class="benefit reveal">
+
+            <div class="benefit-number">
+              06 — PENDAMPINGAN EKSPOR
+            </div>
+
+            <p>
+              Program kelas ekspor intensif, pendampingan kelengkapan dokumen ekspor,
+              serta fasilitasi akses buyer internasional tepercaya.
+            </p>
+
+          </article>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- =======================================================
+         CARA KAMI BEKERJA
+    ======================================================= -->
+
+    <section
+      class="workflow"
+      id="cara-kerja"
+      aria-labelledby="workflow-title"
+    >
+
+      <div class="container">
+
+        <div class="workflow-heading reveal">
+
+          <span class="section-tag">
+            Cara Kami Bekerja
+          </span>
+
+          <h2 id="workflow-title">
+            Kami tidak hanya memberi solusi.<br>
+            Kami membantu menentukan langkahnya.
+          </h2>
+
+          <p>
+            Setiap bisnis memiliki kondisi dan tantangan yang berbeda.
+            Karena itu, pendekatan kami dimulai dari memahami kondisi bisnis,
+            menentukan strategi, menjalankan langkah yang tepat, hingga melihat
+            peluang pengembangan berikutnya.
+          </p>
+
+        </div>
+
+        <div class="workflow-grid">
+
+          <!-- DIAGNOSA & STRATEGI -->
+
+          <article class="workflow-card reveal">
+
+            <h3>
+              Diagnosa &amp; Strategi
+            </h3>
+
+            <p>
+              Kami memahami kondisi bisnis, mengidentifikasi tantangan,
+              melihat peluang, dan membantu menentukan arah strategi yang
+              paling relevan dengan kebutuhan bisnis.
+            </p>
+
+          </article>
+
+          <!-- IMPLEMENTASI -->
+
+          <article class="workflow-card reveal">
+
+            <h3>
+              Implementasi
+            </h3>
+
+            <p>
+              Strategi diterjemahkan menjadi langkah nyata melalui pengembangan
+              branding, media promosi, digitalisasi, maupun aktivitas pemasaran
+              sesuai kebutuhan bisnis.
+            </p>
+
+          </article>
+
+          <!-- SCALING -->
+
+          <article class="workflow-card reveal">
+
+            <h3>
+              Scaling
+            </h3>
+
+            <p>
+              Setelah fondasi bisnis semakin kuat, kami membantu melihat
+              peluang pengembangan berikutnya agar exposure, brand, dan
+              potensi pasar dapat terus berkembang.
+            </p>
+
+          </article>
+
+        </div>
+
+        <!-- AI DIAGNOSIS -->
+
+        <div class="ai-diagnosis reveal">
+
+          <div class="ai-diagnosis-content">
+
+            <div class="ai-icon">
+
+              <svg
+                width="23"
+                height="23"
+                viewBox="0 0 24 24"
+                fill="none"
+                aria-hidden="true"
+              >
+
+                <path
+                  d="M9 3V6M15 3V6M9 18V21M15 18V21M3 9H6M3 15H6M18 9H21M18 15H21"
+                  stroke="currentColor"
+                  stroke-width="1.7"
+                  stroke-linecap="round"
+                />
+
+                <rect
+                  x="6"
+                  y="6"
+                  width="12"
+                  height="12"
+                  rx="3"
+                  stroke="currentColor"
+                  stroke-width="1.7"
+                />
+
+                <circle
+                  cx="10"
+                  cy="11"
+                  r="1"
+                  fill="currentColor"
+                />
+
+                <circle
+                  cx="14"
+                  cy="11"
+                  r="1"
+                  fill="currentColor"
+                />
+
+                <path
+                  d="M9.5 14C10.2 14.7 11 15 12 15C13 15 13.8 14.7 14.5 14"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                />
+
+              </svg>
+
+            </div>
+
+            <div class="ai-diagnosis-text">
+
+              <h3>
+                Ingin mengetahui kondisi bisnis Anda?
+              </h3>
+
+              <p>
+                Gunakan AI Diagnosis untuk mendapatkan gambaran awal mengenai
+                kondisi brand, pemasaran, exposure, dan peluang pengembangan
+                bisnis Anda sebelum melakukan konsultasi lebih lanjut.
+              </p>
+
+            </div>
+
+          </div>
+
+          <a
+            href="https://gemini.google.com/share/38256b61eaf0"
+            target="_blank"
+            rel="noopener"
+            class="ai-btn"
+          >
+
+            Coba AI Diagnosis
+
+            <svg
+              width="16"
+              height="16"
+              viewBox="0 0 24 24"
+              fill="none"
+              aria-hidden="true"
+            >
+
+              <path
+                d="M5 12H19M13 6L19 12L13 18"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+
+            </svg>
+
+          </a>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- =======================================================
+         FINAL CTA
+    ======================================================= -->
+
+    <section
+      class="final-cta"
+      id="konsultasi"
+      aria-labelledby="cta-title"
+    >
+
+      <div class="container">
+
+        <div class="cta-box">
+
+          <div class="cta-content reveal">
+
+            <div class="urgency">
+
+              <span class="urgency-dot"></span>
+
+              Konsultasi berdasarkan kebutuhan bisnis
+
+            </div>
+
+            <h2 id="cta-title">
+              Punya produk bagus? Saatnya membuat lebih banyak orang mengenalnya.
+            </h2>
+
+            <p>
+              Ceritakan bisnis Anda kepada kami. Bersama-sama kita cari arah yang tepat
+              agar brand Anda lebih kuat, bernilai, dan dikenal pasar.
+            </p>
+
+            <a
+              href="https://wa.me/628558885800"
+              target="_blank"
+              rel="noopener"
+              class="btn btn-primary"
+            >
+
+              Hubungi Kami
+
+              <svg
+                width="17"
+                height="17"
+                viewBox="0 0 24 24"
+                fill="none"
+                aria-hidden="true"
+              >
+
+                <path
+                  d="M5 12H19M13 6L19 12L13 18"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+
+              </svg>
+
+            </a>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =======================================================
+         MITRA KAMI
+    ======================================================= -->
+
+    <section
+      class="partners"
+      id="mitra"
+      aria-labelledby="partners-title"
+    >
+
+      <div class="container">
+
+        <div class="partners-heading reveal">
+
+          <h2 id="partners-title">
+            <span>Mitra</span> <span class="heading-orange">Kami</span>
+          </h2>
+
+          <p>
+            Kenali berbagai bisnis lokal yang tumbuh bersama dan menjadi bagian
+            dari perjalanan kami dalam memperkenalkan brand lokal kepada pasar.
+          </p>
+
+        </div>
+
+        <div class="partners-slider" aria-label="Daftar mitra kami">
+
+          <div class="partners-track">
+
+            <a
+              class="partner-card"
+              href="https://pawinreng-website.vercel.app"
+              target="_blank"
+              rel="noopener"
+              aria-label="Kunjungi website UMKM 1"
+            >
+              <img src="assets/umkm1.jpg" alt="Logo UMKM 1">
+            </a>
+
+            <a
+              class="partner-card"
+              href="https://pawinreng-website.vercel.app"
+              target="_blank"
+              rel="noopener"
+              aria-label="Kunjungi website UMKM 2"
+            >
+              <img src="assets/umkm2.jpg" alt="Logo UMKM 2">
+            </a>
+
+            <a
+              class="partner-card"
+              href="https://pawinreng-website.vercel.app"
+              target="_blank"
+              rel="noopener"
+              aria-label="Kunjungi website UMKM 3"
+            >
+              <img src="assets/umkm3.jpg" alt="Logo UMKM 3">
+            </a>
+
+            <a
+              class="partner-card"
+              href="https://pawinreng-website.vercel.app"
+              target="_blank"
+              rel="noopener"
+              aria-label="Kunjungi website UMKM 4"
+            >
+              <img src="assets/umkm4.jpg" alt="Logo UMKM 4">
+            </a>
+
+            <a
+              class="partner-card"
+              href="https://pawinreng-website.vercel.app"
+              target="_blank"
+              rel="noopener"
+              aria-label="Kunjungi website UMKM 5"
+            >
+              <img src="assets/umkm5.jpg" alt="Logo UMKM 5">
+            </a>
+
+            <a
+              class="partner-card"
+              href="https://pawinreng-website.vercel.app"
+              target="_blank"
+              rel="noopener"
+              aria-label="Kunjungi website UMKM 6"
+            >
+              <img src="assets/umkm6.jpg" alt="Logo UMKM 6">
+            </a>
+
+            <a
+              class="partner-card"
+              href="https://pawinreng-website.vercel.app"
+              target="_blank"
+              rel="noopener"
+              aria-label="Kunjungi website UMKM 7"
+            >
+              <img src="assets/umkm7.jpg" alt="Logo UMKM 7">
+            </a>
+
+            <a
+              class="partner-card"
+              href="https://pawinreng-website.vercel.app"
+              target="_blank"
+              rel="noopener"
+              aria-label="Kunjungi website UMKM 8"
+            >
+              <img src="assets/umkm8.jpg" alt="Logo UMKM 8">
+            </a>
+
+            <a
+              class="partner-card"
+              href="https://pawinreng-website.vercel.app"
+              target="_blank"
+              rel="noopener"
+              aria-label="Kunjungi website UMKM 9"
+            >
+              <img src="assets/umkm9.jpg" alt="Logo UMKM 9">
+            </a>
+
+            <a
+              class="partner-card"
+              href="https://pawinreng-website.vercel.app"
+              target="_blank"
+              rel="noopener"
+              aria-label="Kunjungi website UMKM 10"
+            >
+              <img src="assets/umkm10.jpg" alt="Logo UMKM 10">
+            </a>
+
+          </div>
+
+        </div>
+
+        <p class="partner-hint">Geser untuk melihat mitra lainnya</p>
+
+      </div>
+
+    </section>
+
+    <!-- =======================================================
+         FAQ
+    ======================================================= -->
+
+    <section
+      class="faq"
+      id="faq"
+      aria-labelledby="faq-title"
+    >
+
+      <div class="container">
+
+        <div class="faq-wrap">
+
+          <div class="faq-heading reveal">
+
+            <span class="section-tag">
+              FAQ
+            </span>
+
+            <h2 id="faq-title">
+              Masih punya pertanyaan?
+            </h2>
+
+            <p>
+              Beberapa hal yang sering ditanyakan sebelum memulai konsultasi.
+            </p>
+
+          </div>
+
+          <div class="faq-list">
+
+            <div class="faq-item reveal">
+
+              <button
+                class="faq-question"
+                type="button"
+                aria-expanded="false"
+              >
+
+                <span>
+                  Apakah layanan ini hanya untuk UMKM yang baru mulai?
+                </span>
+
+                <span class="faq-icon">
+
+                  <svg
+                    width="15"
+                    height="15"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    aria-hidden="true"
+                  >
+
+                    <path
+                      d="M12 5V19M5 12H19"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                    />
+
+                  </svg>
+
+                </span>
+
+              </button>
+
+              <div class="faq-answer">
+
+                <div>
+
+                  <p>
+                    Tidak. Konsultasi dapat disesuaikan untuk bisnis yang baru berjalan
+                    maupun bisnis yang sudah memiliki produk dan pelanggan tetapi ingin
+                    memperkuat branding, exposure, dan strategi pemasarannya.
+                  </p>
+
+                </div>
+
+              </div>
+
+            </div>
+
+            <div class="faq-item reveal">
+
+              <button
+                class="faq-question"
+                type="button"
+                aria-expanded="false"
+              >
+
+                <span>
+                  Apakah harus sudah memiliki brand terlebih dahulu?
+                </span>
+
+                <span class="faq-icon">
+
+                  <svg
+                    width="15"
+                    height="15"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    aria-hidden="true"
+                  >
+
+                    <path
+                      d="M12 5V19M5 12H19"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                    />
+
+                  </svg>
+
+                </span>
+
+              </button>
+
+              <div class="faq-answer">
+
+                <div>
+
+                  <p>
+                    Tidak harus. Justru konsultasi dapat membantu Anda menentukan arah brand,
+                    positioning, dan cara memperkenalkan bisnis dengan lebih jelas.
+                  </p>
+
+                </div>
+
+              </div>
+
+            </div>
+
+            <div class="faq-item reveal">
+
+              <button
+                class="faq-question"
+                type="button"
+                aria-expanded="false"
+              >
+
+                <span>
+                  Apa saja yang bisa dikonsultasikan dengan ISK?
+                </span>
+
+                <span class="faq-icon">
+
+                  <svg
+                    width="15"
+                    height="15"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    aria-hidden="true"
+                  >
+
+                    <path
+                      d="M12 5V19M5 12H19"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                    />
+
+                  </svg>
+
+                </span>
+
+              </button>
+
+              <div class="faq-answer">
+
+                <div>
+
+                  <p>
+                    Konsultasi dapat membahas berbagai kebutuhan bisnis, seperti branding,
+                    digitalisasi, pemasaran, media promosi, pengembangan bisnis, komunitas dan networking,
+                    hingga pendampingan ekspor sesuai dengan kebutuhan bisnis.
+                  </p>
+
+                </div>
+
+              </div>
+
+            </div>
+
+            <div class="faq-item reveal">
+
+              <button
+                class="faq-question"
+                type="button"
+                aria-expanded="false"
+              >
+
+                <span>
+                  Apakah konsultasi bisa membahas strategi pemasaran digital?
+                </span>
+
+                <span class="faq-icon">
+
+                  <svg
+                    width="15"
+                    height="15"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    aria-hidden="true"
+                  >
+
+                    <path
+                      d="M12 5V19M5 12H19"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                    />
+
+                  </svg>
+
+                </span>
+
+              </button>
+
+              <div class="faq-answer">
+
+                <div>
+
+                  <p>
+                    Bisa. Pembahasan dapat mencakup kebutuhan branding, positioning,
+                    media promosi, exposure, hingga arah pemasaran digital sesuai kondisi bisnis.
+                  </p>
+
+                </div>
+
+              </div>
+
+            </div>
+
+            <div class="faq-item reveal">
+
+              <button
+                class="faq-question"
+                type="button"
+                aria-expanded="false"
+              >
+
+                <span>
+                  Bagaimana cara memulai konsultasi?
+                </span>
+
+                <span class="faq-icon">
+
+                  <svg
+                    width="15"
+                    height="15"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    aria-hidden="true"
+                  >
+
+                    <path
+                      d="M12 5V19M5 12H19"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                    />
+
+                  </svg>
+
+                </span>
+
+              </button>
+
+              <div class="faq-answer">
+
+                <div>
+
+                  <p>
+                    Cukup hubungi kami melalui WhatsApp. Ceritakan singkat mengenai bisnis,
+                    produk, dan tantangan yang sedang dihadapi. Tim kami akan membantu
+                    mengarahkan langkah berikutnya.
+                  </p>
+
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="faq-contact reveal">
+
+            <div class="faq-contact-heading">
+              <h3>Masih belum menemukan jawaban?</h3>
+              <p>
+                Punya pertanyaan lain seputar layanan ISK? Kirimkan pertanyaan Anda melalui form berikut.
+                Pertanyaan akan diteruskan ke email ISK Batam.
+              </p>
+            </div>
+
+            <form
+              class="faq-form"
+              action="https://formsubmit.co/iskbatam@gmail.com"
+              method="POST"
+            >
+
+              <input type="hidden" name="_subject" value="Pertanyaan Baru dari Website ISK Batam">
+              <input type="hidden" name="_template" value="table">
+              <input type="hidden" name="_captcha" value="false">
+
+              <div class="faq-form-group">
+                <label for="question-name">Nama</label>
+                <input
+                  id="question-name"
+                  name="Nama"
+                  type="text"
+                  placeholder="Nama Anda"
+                  autocomplete="name"
+                  required
+                >
+              </div>
+
+              <div class="faq-form-group">
+                <label for="question-email">Email</label>
+                <input
+                  id="question-email"
+                  name="Email"
+                  type="email"
+                  placeholder="email@contoh.com"
+                  autocomplete="email"
+                  required
+                >
+              </div>
+
+              <div class="faq-form-group">
+                <label for="question-message">Pertanyaan</label>
+                <textarea
+                  id="question-message"
+                  name="Pertanyaan"
+                  rows="5"
+                  placeholder="Tulis pertanyaan Anda..."
+                  required
+                ></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary">
+                Kirim Pertanyaan
+                <svg
+                  width="17"
+                  height="17"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M5 12H19M13 6L19 12L13 18"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </button>
+
+            </form>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- =======================================================
+         TEMUKAN ISK BATAM
+    ======================================================= -->
+
+    <section
+      class="find-isk"
+      id="temukan-isk"
+      aria-labelledby="find-isk-title"
+    >
+
+      <div class="container">
+
+        <div class="find-isk-wrap">
+
+          <div class="find-isk-heading reveal">
+            <span class="section-tag">Temukan ISK Batam</span>
+            <h2 id="find-isk-title">Kontak Kami</h2>
+            <p>
+              Ikuti informasi dan aktivitas ISK Batam melalui berbagai platform kami.
+            </p>
+          </div>
+
+          <div class="social-links reveal" aria-label="Media sosial ISK Batam">
+
+            <a class="social-link" href="https://instagram.com/iskbatam" target="_blank" rel="noopener" aria-label="Instagram ISK Batam" title="Instagram ISK Batam">
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" stroke-width="2"/>
+                <circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="2"/>
+                <circle cx="17.5" cy="6.5" r="1" fill="currentColor"/>
+              </svg>
+            </a>
+
+            <a class="social-link" href="https://facebook.com/iskbatam" target="_blank" rel="noopener" aria-label="Facebook ISK Batam" title="Facebook ISK Batam">
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M14 8h3V4h-3c-3.31 0-5 1.69-5 5v3H6v4h3v4h4v-4h3l1-4h-4V9c0-.66.34-1 1-1Z" fill="currentColor"/>
+              </svg>
+            </a>
+
+            <a class="social-link" href="https://www.tiktok.com/@iskbatam" target="_blank" rel="noopener" aria-label="TikTok ISK Batam" title="TikTok ISK Batam">
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M15 4c.3 2.1 1.5 3.6 3.5 4.1v3.1c-1.3-.1-2.5-.5-3.5-1.2v6.1a5.4 5.4 0 1 1-4.7-5.3v3.2a2.2 2.2 0 1 0 1.6 2.1V4H15Z" fill="currentColor"/>
+              </svg>
+            </a>
+
+            <a class="social-link" href="https://youtube.com/@iskbatam" target="_blank" rel="noopener" aria-label="YouTube ISK Batam" title="YouTube ISK Batam">
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M21.2 7.1a2.9 2.9 0 0 0-2-2C17.4 4.6 12 4.6 12 4.6s-5.4 0-7.2.5a2.9 2.9 0 0 0-2 2C2.3 8.9 2.3 12 2.3 12s0 3.1.5 4.9a2.9 2.9 0 0 0 2 2c1.8.5 7.2.5 7.2.5s5.4 0 7.2-.5a2.9 2.9 0 0 0 2-2c.5-1.8.5-4.9.5-4.9s0-3.1-.5-4.9Z" fill="currentColor"/>
+                <path d="m10 15.5 5-3.5-5-3.5v7Z" fill="white"/>
+              </svg>
+            </a>
+
+            <a class="social-link" href="https://wa.me/628558885800" target="_blank" rel="noopener" aria-label="WhatsApp ISK Batam" title="WhatsApp ISK Batam">
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M20.5 3.5A11.9 11.9 0 0 0 12 0C5.4 0 .1 5.3.1 11.9c0 2.1.5 4.2 1.6 6L0 24l6.3-1.7a11.9 11.9 0 0 0 5.7 1.5h.1c6.5 0 11.8-5.3 11.8-11.9 0-3.2-1.2-6.2-3.4-8.4ZM12 21.5c-1.8 0-3.6-.5-5.1-1.5l-.4-.2-3.7 1 1-3.6-.2-.4a9.7 9.7 0 0 1-1.5-5.1C2.1 6.3 6.5 2 12 2c2.6 0 5.1 1 6.9 2.9a9.7 9.7 0 0 1 2.8 6.9c0 5.4-4.3 9.7-9.7 9.7Z" fill="currentColor"/>
+                <path d="M17.6 14.5c-.3-.2-1.8-.9-2.1-1-.3-.1-.5-.2-.7.2-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-1.6-.8-2.7-1.4-3.8-3.2-.3-.5.3-.5.9-1.6.1-.2.1-.4 0-.6-.1-.2-.7-1.7-.9-2.3-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.6.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.1 3c.1.2 2 3.1 4.9 4.3 2.8 1.2 2.8.8 3.3.8.5 0 1.8-.7 2.1-1.3.3-.6.3-1.1.2-1.2-.1-.2-.3-.3-.6-.4Z" fill="currentColor"/>
+              </svg>
+            </a>
+
+          </div>
+
+          <div class="map-link reveal">
+            <iframe
+              src="https://www.google.com/maps?q=ISK%20Batam&output=embed"
+              title="Lokasi ISK Batam di Google Maps"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              allowfullscreen
+            ></iframe>
+
+            <a
+              class="map-overlay"
+              href="https://maps.app.goo.gl/X5GzjnwAwYXuZ14o6"
+              target="_blank"
+              rel="noopener"
+              aria-label="Buka lokasi ISK Batam di Google Maps"
+            >
+              <div class="map-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <path d="M20 10c0 5-8 11-8 11S4 15 4 10a8 8 0 1 1 16 0Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+                  <circle cx="12" cy="10" r="2.5" stroke="currentColor" stroke-width="2"/>
+                </svg>
+              </div>
+              <strong>Lokasi ISK Batam</strong>
+              <span>Klik untuk membuka lokasi di Google Maps</span>
+            </a>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <!-- =========================================================
+       FOOTER
+  ========================================================= -->
+
+  <footer>
+
+    <div class="container">
+
+      <div class="footer-grid">
+
+        <div class="footer-brand">
+
+          <a
+            href="#beranda"
+            class="brand"
+            aria-label="Inovasi Strategi Konsultan"
+          >
+
+            <img
+              class="brand-mark"
+              src="assets/logoisk.png"
+              alt="Logo Inovasi Strategi Konsultan"
+            >
+
+            <div class="brand-text">
+
+              <strong>
+                Inovasi Strategi Konsultan
+              </strong>
+
+              <span>
+                ISK BATAM
+              </span>
+
+            </div>
+
+          </a>
+
+        </div>
+
+        <div class="footer-socials" aria-label="Sosial media dan email ISK Batam">
+
+          <a
+            class="footer-social-link"
+            href="https://instagram.com/iskbatam"
+            target="_blank"
+            rel="noopener"
+            aria-label="Instagram ISK Batam"
+            title="Instagram"
+          >
+            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" stroke-width="1.8"/>
+              <circle cx="12" cy="12" r="4.2" stroke="currentColor" stroke-width="1.8"/>
+              <circle cx="17.4" cy="6.7" r="1" fill="currentColor"/>
+            </svg>
+          </a>
+
+          <a
+            class="footer-social-link"
+            href="https://facebook.com/iskbatam"
+            target="_blank"
+            rel="noopener"
+            aria-label="Facebook ISK Batam"
+            title="Facebook"
+          >
+            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path d="M14 8H16V4.5C15.5 4.4 14.8 4.3 13.8 4.3C10.8 4.3 9 6.1 9 9.2V11H6V14.5H9V20H12.7V14.5H15.7L16.2 11H12.7V9.5C12.7 8.5 13.2 8 14 8Z" fill="currentColor"/>
+            </svg>
+          </a>
+
+          <a
+            class="footer-social-link"
+            href="https://www.tiktok.com/@iskbatam"
+            target="_blank"
+            rel="noopener"
+            aria-label="TikTok ISK Batam"
+            title="TikTok"
+          >
+            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path d="M14.2 4C14.6 6.2 15.8 7.5 18 7.7V11C16.5 10.9 15.2 10.4 14.2 9.6V15.1C14.2 18.1 12.1 20 9.3 20C6.7 20 4.8 18.3 4.8 15.9C4.8 13.3 6.9 11.5 9.6 11.5C10 11.5 10.3 11.5 10.7 11.6V14.8C10.4 14.7 10.1 14.6 9.7 14.6C8.8 14.6 8.1 15.1 8.1 15.9C8.1 16.6 8.6 17 9.4 17C10.5 17 11 16.2 11 15V4H14.2Z" fill="currentColor"/>
+            </svg>
+          </a>
+
+          <a
+            class="footer-social-link"
+            href="https://youtube.com/@iskbatam"
+            target="_blank"
+            rel="noopener"
+            aria-label="YouTube ISK Batam"
+            title="YouTube"
+          >
+            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path d="M21 12C21 12 21 16.2 20.5 17.8C20.2 18.7 19.5 19.4 18.6 19.7C17 20.2 12 20.2 12 20.2C12 20.2 7 20.2 5.4 19.7C4.5 19.4 3.8 18.7 3.5 17.8C3 16.2 3 12 3 12C3 12 3 7.8 3.5 6.2C3.8 5.3 4.5 4.6 5.4 4.3C7 3.8 12 3.8 12 3.8C12 3.8 17 3.8 18.6 4.3C19.5 4.6 20.2 5.3 20.5 6.2C21 7.8 21 12 21 12Z" stroke="currentColor" stroke-width="1.6"/>
+              <path d="M10 8.8L16 12L10 15.2V8.8Z" fill="currentColor"/>
+            </svg>
+          </a>
+
+          <a
+            class="footer-social-link"
+            href="https://wa.me/628558885800"
+            target="_blank"
+            rel="noopener"
+            aria-label="WhatsApp ISK Batam"
+            title="WhatsApp"
+          >
+            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path d="M20 11.7C20 16.2 16.3 19.8 11.8 19.8C10.4 19.8 9.1 19.5 8 18.8L4 20L5.2 16.1C4.4 14.9 4 13.5 4 12C4 7.5 7.7 3.9 12.2 3.9C16.5 3.9 20 7.4 20 11.7Z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/>
+              <path d="M9 8.5C9.2 8.1 9.5 8 9.8 8C10.1 8 10.3 8.1 10.5 8.4L11.1 9.5C11.3 9.8 11.2 10.1 11 10.3L10.5 10.8C11.1 12 12.1 13 13.3 13.5L13.8 13C14 12.8 14.3 12.7 14.6 12.9L15.7 13.5C16 13.7 16.1 14 16 14.3C15.7 15.1 15.1 15.6 14.4 15.7C13.2 15.8 11.2 14.7 9.9 13.4C8.6 12.1 7.5 10.1 7.6 8.9C7.7 8.2 8.2 7.6 9 7.3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+
+          <a
+            class="footer-social-link"
+            href="mailto:iskbatam@gmail.com"
+            aria-label="Email ISK Batam"
+            title="Email"
+          >
+            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <rect x="3" y="5" width="18" height="14" rx="2.5" stroke="currentColor" stroke-width="1.8"/>
+              <path d="M4 7L12 13L20 7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+
+        <div>
+          © 2026 Inovasi Strategi Konsultan. Seluruh hak cipta dilindungi.
+        </div>
+
+      </div>
+
+    </div>
+
+  </footer>
+<script>
+
+    /* =========================================================
+       MOBILE NAV
+    ========================================================= */
+
+    const menuToggle = document.getElementById("menuToggle");
+    const mobileNav = document.getElementById("mobileNav");
+
+    function closeMobileNav() {
+      menuToggle.classList.remove("active");
+      mobileNav.classList.remove("active");
+      menuToggle.setAttribute("aria-expanded", "false");
+    }
+
+    menuToggle.addEventListener("click", () => {
+
+      const isActive = menuToggle.classList.toggle("active");
+
+      mobileNav.classList.toggle("active", isActive);
+
+      menuToggle.setAttribute(
+        "aria-expanded",
+        isActive ? "true" : "false"
+      );
+
+    });
+
+    mobileNav.querySelectorAll("a").forEach(link => {
+
+      link.addEventListener("click", () => {
+        closeMobileNav();
+      });
+
+    });
+
+    document.addEventListener("click", (event) => {
+
+      if (
+        !mobileNav.contains(event.target) &&
+        !menuToggle.contains(event.target)
+      ) {
+
+        closeMobileNav();
+
+      }
+
+    });
+
+    document.addEventListener("keydown", (event) => {
+
+      if (event.key === "Escape") {
+        closeMobileNav();
+      }
+
+    });
+
+    window.addEventListener("resize", () => {
+
+      if (window.innerWidth > 720) {
+        closeMobileNav();
+      }
+
+    });
+
+    /* =========================================================
+       FAQ ACCORDION
+    ========================================================= */
+
+    const faqItems = document.querySelectorAll(".faq-item");
+
+    faqItems.forEach(item => {
+
+      const button = item.querySelector(".faq-question");
+
+      button.addEventListener("click", () => {
+
+        const isActive = item.classList.contains("active");
+
+        faqItems.forEach(otherItem => {
+
+          otherItem.classList.remove("active");
+
+          otherItem
+            .querySelector(".faq-question")
+            .setAttribute("aria-expanded", "false");
+
+        });
+
+        if (!isActive) {
+
+          item.classList.add("active");
+
+          button.setAttribute("aria-expanded", "true");
+
+        }
+
+      });
+
+    });
+
+    /* =========================================================
+       REVEAL ON SCROLL
+    ========================================================= */
+
+    const revealElements = document.querySelectorAll(".reveal");
+
+    const revealObserver = new IntersectionObserver(
+      entries => {
+
+        entries.forEach(entry => {
+
+          if (entry.isIntersecting) {
+
+            entry.target.classList.add("visible");
+
+            revealObserver.unobserve(entry.target);
+
+          }
+
+        });
+
+      },
+      {
+        threshold: 0.12
+      }
+    );
+
+    revealElements.forEach(element => {
+
+      revealObserver.observe(element);
+
+    });
+
+    /* =========================================================
+       SMOOTH ANCHOR
+    ========================================================= */
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+
+      anchor.addEventListener("click", function(event) {
+
+        const targetId = this.getAttribute("href");
+
+        if (targetId === "#") return;
+
+        const target = document.querySelector(targetId);
+
+        if (!target) return;
+
+        event.preventDefault();
+
+        const headerHeight =
+          document.querySelector("header").offsetHeight;
+
+        const targetPosition =
+          target.getBoundingClientRect().top +
+          window.pageYOffset -
+          headerHeight;
+
+        window.scrollTo({
+          top: targetPosition,
+          behavior: "smooth"
+        });
+
+      });
+
+    });
+
+  </script>
+
+</body>
+</html>
